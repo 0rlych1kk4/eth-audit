@@ -1,0 +1,9 @@
+[package]
+name = "eth_audit_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+solang-parser = "0.3.5"        # Solidity AST parser :contentReference[oaicite:0]{index=0}
+

@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = [
+  "eth_audit_core",
+  "eth_audit_reentrancy",
+  "eth_audit_unchecked_send",
+  "eth_audit_integer_overflow",
+  "eth-audit-cli",
+]
+

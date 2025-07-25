@@ -1,0 +1,21 @@
+[package]
+name = "eth-audit-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.40", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+eth_audit_core = { path = "../eth_audit_core" }
+eth_audit_reentrancy = { path = "../eth_audit_reentrancy", optional = true }
+eth_audit_unchecked_send = { path = "../eth_audit_unchecked_send", optional = true }
+eth_audit_integer_overflow = { path = "../eth_audit_integer_overflow", optional = true }
+
+[features]
+default = ["reentrancy"]
+reentrancy = ["eth_audit_reentrancy"]
+unchecked-send = ["eth_audit_unchecked_send"]
+integer-overflow = ["eth_audit_integer_overflow"]
+

@@ -1,0 +1,9 @@
+[package]
+name = "eth_audit_reentrancy"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eth_audit_core = { path = "../eth_audit_core" }
+serde = { version = "1", features = ["derive"] }
+

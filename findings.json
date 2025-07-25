@@ -1,0 +1,11 @@
+[
+  {
+    "rule": "reentrancy",
+    "message": "Example finding",
+    "severity": "High",
+    "location": {
+      "line": 1,
+      "column": 1
+    }
+  }
+]
